@@ -11,6 +11,11 @@ const connect = function () {
 
   conn.on('data', (data) => {
     console.log('Message from client: ', data)
+    console.log('Successfully connected to game server')
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: KTH');
   });
 
   return conn;
