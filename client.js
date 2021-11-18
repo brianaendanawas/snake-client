@@ -16,6 +16,12 @@ const connect = function () {
 
   conn.on('connect', () => {
     conn.write('Name: KTH');
+    conn.write('Move: up');
+    //setTimeout(function(){ conn.write("Move: up"); }, 50);
+    //setTimeout(function(){ conn.write("Move: down"); }, 100);
+    //setTimeout(function(){ conn.write("Move: left"); }, 150);
+    //setTimeout(function(){ conn.write("Move: right"); }, 200);
+    //setInterval(function(){ conn.write("Move: up"); }, 50);
   });
 
   return conn;
