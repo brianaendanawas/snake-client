@@ -11,13 +11,13 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on('data', (data) => {
-    console.log('Message from client: ', data)
-    console.log('Successfully connected to game server')
+    console.log('Message from client: ', data);
+    console.log('Successfully connected to game server');
   }); 
 
   conn.on('connect', () => {
     conn.write('Name: KTH');
-    //conn.write('Move: up');
+    setTimeout(function(){ conn.write('Move: up'); }, 50);
   });
 
   return conn;
