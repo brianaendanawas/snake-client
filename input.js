@@ -1,5 +1,6 @@
 let connection;
 
+// setup interface to handle user input from stdin
 const setupInput = (conn) => {
   connection = conn;
   const stdin = process.stdin;
@@ -29,11 +30,10 @@ const handleUserInput = function (key) {
     connection.write("Say: I'm moving!");
   } else if (key === 'n') {
     connection.write("Say: I'm number one!");
-  } else if (key === 'j') {
-    connection.write("Say: JIMIN JIMIN");
-  }
+  } 
 }
 
+// event listener for stdin 
 standardInput.on("data", handleUserInput);
 
 module.exports = {
