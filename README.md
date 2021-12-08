@@ -8,8 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+![image](https://user-images.githubusercontent.com/61978323/145137695-9b624ec5-5830-43ac-95a4-4aeaafc418fd.png)
 
 
 ## Getting Started
